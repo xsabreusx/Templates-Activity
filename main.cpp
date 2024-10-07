@@ -12,7 +12,7 @@ template <typename T>
 T max_two (T M, T N) {
 
     if (M > N) return M;
-    if (N > M) return N;
+    else return N;
 }
 
 template<typename T, typename U, typename V>
@@ -25,39 +25,37 @@ T max_three(T a, U b, V c){
     {
         return b;
     }
-    else if ( c > a && c > b)
-    {
-        return c;
-    }
-    else return 0;
+    else return c;
 }
 
 template <typename T>
-void swap(T a, T b)
+void swapT(T &a, T &b)
 {
-    T x = a;
-    T y = b;
-
     T temp = 0;
 
 
-    cout << "\nX" = x;
-    cout << "\nY" = y;
+    cout << "\nFirst value: " << a;
+    cout << "\nSecond value: " << b;
 
     temp = a;
-    x = b;
-    y = temp;
+    a = b;
+    b = temp;
 
-    cout << "\nX" = x;
-    cout << "\nY" = y;
+    cout << "\nFirst value: " << a;
+    cout << "\nSecond value: " << b;
 
 }
 
 
 int main(){
 
+    int a = 3;
+    int b = 5;
+
     cout << "\nTemplate Exercise Running.";
     cout << "\nMax two results: " << max_two (5.6, 6.7);
     cout << "\nMax three results: " << max_three(5.83, 5, 7.1);
+    cout << "\nSwap function test: "; 
+    swapT(a, b);
 
 }
