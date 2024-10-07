@@ -37,5 +37,6 @@ T max_three(T a, U b, V c){
 int main(){
 
     std::cout << max_two (5.6, 6.7);
+    std::cout << max_three(5.2, 6, 8.53);
 
 }
