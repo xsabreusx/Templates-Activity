@@ -32,10 +32,32 @@ T max_three(T a, U b, V c){
     else return 0;
 }
 
+template <typename T>
+void swap(T a, T b)
+{
+    T x = a;
+    T y = b;
+
+    T temp = 0;
+
+
+    cout << "\nX" = x;
+    cout << "\nY" = y;
+
+    temp = a;
+    x = b;
+    y = temp;
+
+    cout << "\nX" = x;
+    cout << "\nY" = y;
+
+}
 
 
 int main(){
 
-    std::cout << max_two (5.6, 6.7);
+    cout << "\nTemplate Exercise Running.";
+    cout << "\nMax two results: " << max_two (5.6, 6.7);
+    cout << "\nMax three results: " << max_three(5.83, 5, 7.1);
 
 }
